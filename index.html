@@ -30,6 +30,7 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
+
           <ul class="nav-list">
             <li>
               <a class="nav-link active-page" href="./index.html">Studio</a>
@@ -56,20 +57,89 @@
             </li>
           </ul>
         </address>
+        <button type="menu" class="btn-menu-burger">
+          <svg class="btn-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-btn-close">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list">
+            <li>
+              <a class="mobile-nav-link active-page" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li>
+                <a class="mobile-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="icon-list">
+            <li class="icon-item">
+              <a href="" class="blue-circle">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="blue-circle">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="blue-circle">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="blue-circle">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="section section-order">
         <div class="container">
           <h1 class="section-order-title">
-            Effective Solutions for Your Business
+            Effective Solutions <br />for Your Business
           </h1>
           <button class="section-order-button" type="button">
             Order Service
           </button>
         </div>
       </section>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="section-features-list">
@@ -123,13 +193,14 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section-team">
+      </section> -->
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-team-list">
             <li class="section-team-item">
               <img
+                srcset="./images/photo-1.jpg 1x, ./images/photo-1@2x.jpg 2x"
                 src="./images/photo-1.jpg"
                 alt="Photo Product Designer"
                 width="264"
@@ -173,6 +244,7 @@
             </li>
             <li class="section-team-item">
               <img
+                srcset="./images/photo-2.jpg 1x, ./images/photo-2@2x.jpg 2x"
                 src="./images/photo-2.jpg"
                 alt="Photo Frontend Developer"
                 width="264"
@@ -214,6 +286,7 @@
             </li>
             <li class="section-team-item">
               <img
+                srcset="./images/photo-3.jpg 1x, ./images/photo-3@2x.jpg 2x"
                 src="./images/photo-3.jpg"
                 alt="Photo Marketing"
                 width="264"
@@ -257,6 +330,7 @@
             </li>
             <li class="section-team-item">
               <img
+                srcset="./images/photo-4.jpg 1x, ./images/photo-4@2x.jpg 2x"
                 src="./images/photo-4.jpg"
                 alt="Photo UI Designer"
                 width="264"
@@ -309,6 +383,7 @@
               <div class="portfolio-cart-top">
                 <img
                   class="section-portfolio-img"
+                  srcset="./images/banking.jpg 1x, ./images/banking@2x.jpg 2x"
                   src="./images/banking.jpg"
                   alt="Banking App"
                   width="360"
@@ -327,6 +402,7 @@
             <li class="section-portfolio-item">
               <div class="portfolio-cart-top">
                 <img
+                  srcset="./images/cashless.jpg 1x, ./images/cashless@2x.jpg 2x"
                   src="./images/cashless.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -345,6 +421,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-cart-top">
                 <img
+                  srcset="
+                    ./images/meditation.jpg    1x,
+                    ./images/meditation@2x.jpg 2x
+                  "
                   src="./images/meditation.jpg"
                   alt="Meditation App"
                   width="360"
@@ -362,7 +442,12 @@
             </li>
             <li class="section-portfolio-item">
               <div class="portfolio-cart-top">
-                <img src="./images/taxi.jpg" alt="Taxi Service" width="360" />
+                <img
+                  srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
+                  src="./images/taxi.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                />
                 <p class="section-text section-portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -377,6 +462,7 @@
             <li class="section-portfolio-item">
               <div class="portfolio-cart-top">
                 <img
+                  srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                   src="./images/screen.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -395,6 +481,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-cart-top">
                 <img
+                  srcset="
+                    ./images//online-courses.jpg    1x,
+                    ./images//online-courses@2x.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -412,9 +502,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left">
           <a class="logo" href="./index.html"
@@ -479,7 +569,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop">
       <div class="modal-window">
         <button type="button" class="btn-close">
           <svg class="close-icon" width="8" height="8">
@@ -560,6 +650,7 @@
           <button type="submit" class="modal-btn-send">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    -->
   </body>
 </html>
