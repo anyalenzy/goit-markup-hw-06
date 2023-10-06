@@ -332,7 +332,7 @@ body {
 .section {
   padding: 96px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1158px) {
   .section {
     padding: 120px 0;
   }
@@ -348,7 +348,8 @@ body {
   background-position: center;
   background-size: cover;
   padding: 72px 0;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 @media (min-resolution: 192dpi) {
   .section-order {
